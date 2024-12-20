@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 
-class TestScreen extends StatelessWidget {
-const TestScreen({ Key? key }) : super(key: key);
+class Test extends StatefulWidget {
+  const Test({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context){
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Test Screen'),
-      ),
-      body: Center(
-        child: Text('This is a test screen'),
-      ),
-    
-    );
+  _TestState createState() => _TestState();
+}
+
+class _TestState extends State<Test> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Text('bonjiur'));
   }
 }

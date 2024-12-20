@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:view_page/screens/home.dart';
 import 'package:view_page/screens/profile.dart';
 import 'package:view_page/screens/setting.dart';
-import 'package:view_page/screens/test.dart';
+// import 'package:view_page/screens/test.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +35,6 @@ class _HomePageState extends State<HomePage> {
    HomeScreen(),
     ProfilePage(),
     SettingPage(),
-    TestScreen()
   ];
 
   void onTabTapped(int index) {
@@ -64,10 +63,7 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.settings),
             label: 'Settings',
           ),
-           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Tests',
-          ),
+       
         ],
       ),
     );
